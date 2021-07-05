@@ -11,24 +11,26 @@ body {
 
 #content {
     width: 75%;
-    background-color: rgb(101, 194, 147);
     margin: 0 auto;
     text-align: center;
 }
-/* 
-.clearfix {
-    content: "";
-    display: table;
-    clear: both;
-} */
 
-header {
-    padding: 20px 0;
-    background-color: rgb(160, 160, 160);
+header h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: white;
 }
 
 main {
     text-align: center;
+}
+
+footer h3 {
+    font-size: 26px;
+}
+
+header,footer {    
+    margin-bottom: 20px;
 }
 
 .radius {    
@@ -38,6 +40,12 @@ main {
 .shadow {
     text-shadow: 1px 1px 2px rgb(112, 112, 112);
 }
+
+/* .clearfix {
+    content: "";
+    display: table;
+    clear: both;
+} */
 
 .card {
     background-color: white;
