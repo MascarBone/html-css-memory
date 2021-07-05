@@ -11,25 +11,10 @@ body {
 
 #content {
     width: 75%;
-    background-color: cornflowerblue;
+    background-color: rgb(101, 194, 147);
     margin: 0 auto;
     text-align: center;
 }
-
-header {
-    padding: 20px 0;
-    background-color: rgb(160, 160, 160);
-}
-
-header h1 {
-    
-}
-/* 
-main {
-    border: 2px solid black;
-    margin: 0 auto;
-} */
-
 /* 
 .clearfix {
     content: "";
@@ -37,12 +22,148 @@ main {
     clear: both;
 } */
 
-.card {
-    width: 250px;
-    height: 350px;
-    background-color: white;
+header {
+    padding: 20px 0;
+    background-color: rgb(160, 160, 160);
+}
+
+main {
+    text-align: center;
+}
+
+.radius {    
     border-radius: 15px;
+}
+
+.shadow {
+    text-shadow: 1px 1px 2px rgb(112, 112, 112);
+}
+
+.card {
+    background-color: white;
     margin: 15px 10px;
+    position: relative;
     display: inline-block;
     /* float: left; */
 }
+
+.card .bg-card {
+    width: 250px;
+    height: 350px;
+    background-size: contain;
+}
+
+.card .bg-pattern {
+    background-image: url('../img/pattern.png');
+}
+
+.card .bg-image{
+    background-position-x: center;
+    background-position-y: 15%;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.card .bg-baloon {
+    background-image: url('../img/noun_air_balloon_3134741.png');
+}
+
+.card .bg-bicycle {
+    background-image: url('../img/noun_Bicycle_3134821.png');
+}
+
+.card .bg-cruise {
+    background-image: url('../img/noun_Cruise_Ship_3134824.png');
+}
+
+.card .bg-submarine {
+    background-image: url('../img/noun_Submarine_3134738.png');
+}
+
+.card .bg-tractor {
+    background-image: url('../img/noun_Tractor_3134797.png');
+}
+
+.card .bg-tram {
+    background-image: url('../img/noun_Tram_3134750.png');
+}
+
+.card span {    
+    font-size: 26px;
+    position: absolute;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Scritta Air Baloon */
+.card .text-color-baloon {
+    color: red;
+}
+
+.card:hover .text-color-baloon::after{
+    content: "Air Baloon";
+}
+
+/* Scritta Bicycle */
+.card .text-color-bicycle {
+    color: green;
+}
+
+.card:hover .text-color-bicycle::after{
+    content: "Bicycle";
+}
+
+/* Scritta Cruise */
+.card .text-color-cruise {
+    color: blue;
+}
+
+.card:hover .text-color-cruise::after{
+    content: "Cruise";
+}
+
+/* Scritta Submarine */
+.card .text-color-submarine {
+    color: yellow;
+}
+
+.card:hover .text-color-submarine::after{
+    content: "Submarine";
+}
+
+/* Scritta Tractor */
+.card .text-color-tractor {
+    color: maroon;
+}
+
+.card:hover .text-color-tractor::after{
+    content: "Tractor";
+}
+
+.card:hover .text-color-tram::after{
+    content: "Tram";
+}
+
+/* Scritta Tram */
+.card .text-color-tram {
+    color: orange;
+}
+
+.card:hover .text-color-bicycle::after{
+    content: "Bicycle";
+}
+
+/* Impostazioni per la comparsa con Hover degli sfondi */
+.card:hover .bg-pattern{
+    display: none;
+}
+
+.card:hover .bg-image {
+    display: block;
+}
+
+.card:hover span{
+    z-index: 1;
+}
+
